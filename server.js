@@ -1,5 +1,6 @@
 const express  = require('express');
 const cors = require('cors');
+const { createSecretKey } = require('crypto');
 
 const app = express()
 
@@ -23,7 +24,6 @@ app.get('/users/:name', (req,res)=>{
 app.get('/posts' ,(req,res)=>{
     res.send('iam here')
 })
-
 
 
 
